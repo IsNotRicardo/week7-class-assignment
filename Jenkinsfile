@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/IsNotRicardo/week7-class-assignment.git'
+                git branch: 'main', url: 'https://github.com/IsNotRicardo/week7-class-assignment.git'
             }
         }
         stage('Build') {
